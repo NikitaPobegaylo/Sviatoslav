@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Автоматизация магазина</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QStackedWidget" name="layoutStack"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Товары</string>
+    </property>
+    <addaction name="actWarehouse"/>
+    <addaction name="separator"/>
+    <addaction name="actIncomeDocs"/>
+    <addaction name="actCashVouchers"/>
+    <addaction name="separator"/>
+    <addaction name="actShowFinancialReport"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <action name="actWarehouse">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/Icons/Container</normaloff>:/Icons/Container</iconset>
+   </property>
+   <property name="text">
+    <string>Склад</string>
+   </property>
+   <property name="toolTip">
+    <string>Отобразить состояние склада</string>
+   </property>
+  </action>
+  <action name="actIncomeDocs">
+   <property name="text">
+    <string>Поступления товаров</string>
+   </property>
+  </action>
+  <action name="actCashVouchers">
+   <property name="text">
+    <string>Продажи товаров</string>
+   </property>
+  </action>
+  <action name="actShowFinancialReport">
+   <property name="text">
+    <string>Финансовый отчет</string>
+   </property>
+   <property name="toolTip">
+    <string>Показать финансовый отчет</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

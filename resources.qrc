@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/Icons">
+        <file alias="unlock">Icons/unlock.ico</file>
+        <file alias="Container">Icons/Container.ico</file>
+        <file alias="Refresh">Icons/refresh.ico</file>
+        <file>Icons/document_delete.ico</file>
+        <file>Icons/save_accept.ico</file>
+        <file>Icons/save_delete.ico</file>
+        <file>Icons/plus_add_green.ico</file>
+        <file>Icons/AddDocument.ico</file>
+        <file>Icons/EditDocument.ico</file>
+        <file>Icons/ok.ico</file>
+    </qresource>
+    <qresource prefix="/Scripts">
+        <file>InitializeDB.sql</file>
+    </qresource>
+</RCC>
